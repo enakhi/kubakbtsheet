@@ -1,0 +1,22 @@
+{
+  "name": "kubakbtsheet",
+  "version": "0.1.0",
+  "summary": "A short description of kubakbtsheet.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/enakhi1@gmail.com/kubakbtsheet",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "enakhi1@gmail.com": "behnam.hosseini@kubakgroup.com"
+  },
+  "source": {
+    "git": "https://github.com/enakhi1@gmail.com/kubakbtsheet.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "kubakbtsheet/Classes/**/*"
+}

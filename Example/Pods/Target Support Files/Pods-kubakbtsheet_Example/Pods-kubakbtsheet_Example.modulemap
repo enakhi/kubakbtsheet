@@ -1,0 +1,6 @@
+framework module Pods_kubakbtsheet_Example {
+  umbrella header "Pods-kubakbtsheet_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
