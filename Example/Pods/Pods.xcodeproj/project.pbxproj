@@ -8,67 +8,67 @@
 
 /* Begin PBXBuildFile section */
 		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		03F5F84B2577D2B900E05CD1 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F5F8392577D2B900E05CD1 /* SheetViewController.swift */; };
-		03F5F84C2577D2B900E05CD1 /* SheetViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F5F83A2577D2B900E05CD1 /* SheetViewDelegate.swift */; };
-		03F5F84D2577D2B900E05CD1 /* InitialTouchPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F5F83B2577D2B900E05CD1 /* InitialTouchPanGestureRecognizer.swift */; };
-		03F5F84E2577D2B900E05CD1 /* SheetContentViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F5F83C2577D2B900E05CD1 /* SheetContentViewDelegate.swift */; };
-		03F5F84F2577D2B900E05CD1 /* SheetContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F5F83D2577D2B900E05CD1 /* SheetContentViewController.swift */; };
-		03F5F8502577D2B900E05CD1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F5F83E2577D2B900E05CD1 /* UIColorExtension.swift */; };
-		03F5F8512577D2B900E05CD1 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F5F83F2577D2B900E05CD1 /* UIViewControllerExtension.swift */; };
-		03F5F8522577D2B900E05CD1 /* Yalta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F5F8402577D2B900E05CD1 /* Yalta.swift */; };
-		03F5F8542577D2B900E05CD1 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F5F8432577D2B900E05CD1 /* Localize.swift */; };
-		03F5F8552577D2B900E05CD1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03F5F8442577D2B900E05CD1 /* Localizable.strings */; };
-		03F5F8562577D2B900E05CD1 /* SheetOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F5F8462577D2B900E05CD1 /* SheetOptions.swift */; };
-		03F5F8572577D2B900E05CD1 /* SheetTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F5F8472577D2B900E05CD1 /* SheetTransition.swift */; };
-		03F5F8592577D2B900E05CD1 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F5F8492577D2B900E05CD1 /* SheetView.swift */; };
-		03F5F85A2577D2B900E05CD1 /* SheetSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F5F84A2577D2B900E05CD1 /* SheetSize.swift */; };
+		0AD13A7F111EB596FF110D29ABBDAF36 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB4C55FDD744E0B4A4292BAA9C6F39 /* SheetViewController.swift */; };
+		110E97953D68604EB40CAA110D70CC51 /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 5795A07B87C50D7B558A05A9E898257C /* Localizable.strings */; };
 		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */; };
 		121439AB6B4061E1B6222256817548FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E658F388F01C72599CA75537950B6095 /* XCTest.framework */; };
 		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
 		1720DA2E2DA4FE0C8DD9EFDDDC4D2F9F /* Pods-kubakbtsheet_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1008A4D72B5B0763D2A2AC6CB3310845 /* Pods-kubakbtsheet_Tests-dummy.m */; };
+		1AEA5848692E934357DA14E182CF4815 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262AA60B2A64D94A891DB9B21541B427 /* UIColorExtension.swift */; };
 		1CC8C18B51B9C780FD4EBF62E229097E /* Pods-kubakbtsheet_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6111D73B0BADEE3B1B8CBACEDD47949 /* Pods-kubakbtsheet_Example-dummy.m */; };
+		212F2A8E37FAFE8EEE594F6479DBC905 /* SheetSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32E918C68E4D2BEE1D349EDC0862BA /* SheetSize.swift */; };
 		2DC72A8315D769543CBFB06F5B9EDF1B /* Pods-kubakbtsheet_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EC76B305F99B8491558F53527B6DFD9 /* Pods-kubakbtsheet_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
 		2E4C0BD2363ABABB6470FBA5415985AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
+		370159FC8623A1993445A0F967C73586 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1EDF657E36450E174C21DA4A6E7943 /* SheetView.swift */; };
 		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		620EDFE4F2075ECF5C418ACA078C8044 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		4EFEECA4220A925AA68D31446DBA45D7 /* SheetViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D643A5DEB0708159771732989CE9A66 /* SheetViewDelegate.swift */; };
+		57D649632A7110A6511590081025E62A /* SheetOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7C090D3DB0A05CD3A9811A3D7E7B6B /* SheetOptions.swift */; };
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
 		6EC033A41969A305581ED40256B23858 /* Pods-kubakbtsheet_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2B9941E9226A4B4514187006D5602B /* Pods-kubakbtsheet_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79CE02FE13A2EEC410898AD547FC1097 /* kubakbtsheet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B1E8B68C94DFF8FB503F7916368EB8 /* kubakbtsheet-dummy.m */; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
 		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9617928B72369CD12C840EE270C07780 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		979CBFD094EFBFC63770C965A41975FE /* SheetContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711E455F3284451BF05E2F0B4BAB692A /* SheetContentViewController.swift */; };
 		9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */; };
 		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */; };
+		A9D58013CAAA2D94A2AAFBB186A1C51B /* kubakbtsheet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DDF04860DE1B145E4D94554AADA6DBEF /* kubakbtsheet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B10E670A424CA02862897DCC28FD3473 /* InitialTouchPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25112C62E0F16251E9B7BEDC9E082371 /* InitialTouchPanGestureRecognizer.swift */; };
 		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		BD4953074A12E769ED4E6C94F5E73694 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
 		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C6E0F00575BCEBFB668AE792AAEFC5CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		CA63ADACAC6C2BF1E30108E6BEF68A09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		CE3DA3A1AD0C154DB6A96D9B25A3A8CC /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B41B819368CC6486F19EB6DC2260AE0 /* Localize.swift */; };
 		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D6A9EC1B43C5DAD165D81A5D3D24FEA4 /* kubakbtsheet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EAB657AC129EEDB5F212B8B3F8CD3D /* kubakbtsheet-dummy.m */; };
+		DD42B1846827B444BFCF6AB76C665CEE /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF8EFF0387BA32AE5F2F4947B89215 /* UIViewControllerExtension.swift */; };
+		E157045542B35DBF3A24A12CC692B4EF /* Yalta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D8ECB33D255188023206FE9C2D0661 /* Yalta.swift */; };
 		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
+		E9655739211E211982E5F643A625D4EA /* SheetTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3EA4014B8BBA88C73E48E177A8895 /* SheetTransition.swift */; };
 		EA78147046A316434FABA56174E50FFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F51FF5A7B79833FD8DC9EB867707E349 /* kubakbtsheet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D8F4B1E69CB3D17A3E460BB58A46FF5 /* kubakbtsheet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9F9957533E80D3109490DB4307E258F /* SheetContentViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106ED042263B72DB02DAA1D5CD136C62 /* SheetContentViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3DFA081C887BCFDF596795547EB7C728 /* PBXContainerItemProxy */ = {
+		152A679CF1ECD073F2B625366583B653 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
 			remoteInfo = FBSnapshotTestCase;
 		};
-		B68511531540DABAD5FB2E08C7901A2A /* PBXContainerItemProxy */ = {
+		241DF3E49633AF668D4CA40F1D85670D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7843E79AE388D24B6C5DF56D100FA5C0;
 			remoteInfo = "Pods-kubakbtsheet_Example";
 		};
-		D8007076AE1692BDCC70C51B2690CDC7 /* PBXContainerItemProxy */ = {
+		5A55D6149CA458C5CC100DB4AC8C4CE1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -78,78 +78,78 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03F5F8392577D2B900E05CD1 /* SheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SheetViewController.swift; path = kubakbtsheet/Classes/SheetViewController.swift; sourceTree = "<group>"; };
-		03F5F83A2577D2B900E05CD1 /* SheetViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SheetViewDelegate.swift; path = kubakbtsheet/Classes/SheetViewDelegate.swift; sourceTree = "<group>"; };
-		03F5F83B2577D2B900E05CD1 /* InitialTouchPanGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InitialTouchPanGestureRecognizer.swift; path = kubakbtsheet/Classes/InitialTouchPanGestureRecognizer.swift; sourceTree = "<group>"; };
-		03F5F83C2577D2B900E05CD1 /* SheetContentViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SheetContentViewDelegate.swift; path = kubakbtsheet/Classes/SheetContentViewDelegate.swift; sourceTree = "<group>"; };
-		03F5F83D2577D2B900E05CD1 /* SheetContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SheetContentViewController.swift; path = kubakbtsheet/Classes/SheetContentViewController.swift; sourceTree = "<group>"; };
-		03F5F83E2577D2B900E05CD1 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = kubakbtsheet/Classes/UIColorExtension.swift; sourceTree = "<group>"; };
-		03F5F83F2577D2B900E05CD1 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = kubakbtsheet/Classes/UIViewControllerExtension.swift; sourceTree = "<group>"; };
-		03F5F8402577D2B900E05CD1 /* Yalta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Yalta.swift; path = kubakbtsheet/Classes/Yalta.swift; sourceTree = "<group>"; };
-		03F5F8432577D2B900E05CD1 /* Localize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
-		03F5F8452577D2B900E05CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		03F5F8462577D2B900E05CD1 /* SheetOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SheetOptions.swift; path = kubakbtsheet/Classes/SheetOptions.swift; sourceTree = "<group>"; };
-		03F5F8472577D2B900E05CD1 /* SheetTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SheetTransition.swift; path = kubakbtsheet/Classes/SheetTransition.swift; sourceTree = "<group>"; };
-		03F5F8492577D2B900E05CD1 /* SheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SheetView.swift; path = kubakbtsheet/Classes/SheetView.swift; sourceTree = "<group>"; };
-		03F5F84A2577D2B900E05CD1 /* SheetSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SheetSize.swift; path = kubakbtsheet/Classes/SheetSize.swift; sourceTree = "<group>"; };
 		046533C72FA5CA68117B830B99ABC591 /* Pods-kubakbtsheet_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kubakbtsheet_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0F0B4CAE492A2EB7A6AA16A9DFB000A2 /* kubakbtsheet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = kubakbtsheet.release.xcconfig; sourceTree = "<group>"; };
 		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		1008A4D72B5B0763D2A2AC6CB3310845 /* Pods-kubakbtsheet_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kubakbtsheet_Tests-dummy.m"; sourceTree = "<group>"; };
+		106ED042263B72DB02DAA1D5CD136C62 /* SheetContentViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetContentViewDelegate.swift; path = kubakbtsheet/Classes/SheetContentViewDelegate.swift; sourceTree = "<group>"; };
+		14F3EB6CADC6A204FAEA826259F9749C /* kubakbtsheet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "kubakbtsheet-Info.plist"; sourceTree = "<group>"; };
 		171693571889587CA9ECEE56488F0692 /* Pods-kubakbtsheet_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-kubakbtsheet_Tests.modulemap"; sourceTree = "<group>"; };
 		182DF6BF5F2AB42027875592088EE745 /* Pods-kubakbtsheet_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kubakbtsheet_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		182FFB6CC82CFE9AB3D70EB2F2C11527 /* Pods-kubakbtsheet_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kubakbtsheet_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
+		25112C62E0F16251E9B7BEDC9E082371 /* InitialTouchPanGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InitialTouchPanGestureRecognizer.swift; path = kubakbtsheet/Classes/InitialTouchPanGestureRecognizer.swift; sourceTree = "<group>"; };
+		262AA60B2A64D94A891DB9B21541B427 /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = kubakbtsheet/Classes/UIColorExtension.swift; sourceTree = "<group>"; };
 		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
-		2925F508D07A44122BC389ACECB73AF6 /* kubakbtsheet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = kubakbtsheet.modulemap; sourceTree = "<group>"; };
+		2FAF8EFF0387BA32AE5F2F4947B89215 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = kubakbtsheet/Classes/UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		350878192146DC9CF45FF9364638F15D /* kubakbtsheet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "kubakbtsheet-Info.plist"; sourceTree = "<group>"; };
-		3D8F4B1E69CB3D17A3E460BB58A46FF5 /* kubakbtsheet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "kubakbtsheet-umbrella.h"; sourceTree = "<group>"; };
+		3E9BDF28021109B509BCF179C44C2ACF /* kubakbtsheet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "kubakbtsheet-prefix.pch"; sourceTree = "<group>"; };
 		3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		49B3EA4014B8BBA88C73E48E177A8895 /* SheetTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetTransition.swift; path = kubakbtsheet/Classes/SheetTransition.swift; sourceTree = "<group>"; };
+		4C227E05FFEC022C735775B4EA37AD1E /* kubakbtsheet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = kubakbtsheet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
 		4EC76B305F99B8491558F53527B6DFD9 /* Pods-kubakbtsheet_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kubakbtsheet_Example-umbrella.h"; sourceTree = "<group>"; };
 		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5795A07B87C50D7B558A05A9E898257C /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		58D8ECB33D255188023206FE9C2D0661 /* Yalta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Yalta.swift; path = kubakbtsheet/Classes/Yalta.swift; sourceTree = "<group>"; };
+		5C276DE249E5144A015E63D241004A43 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6413F2880DB624A6E1238F39C98A0CB3 /* Pods-kubakbtsheet_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kubakbtsheet_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		6A689CB8CF42D5C86D11AB0ED7D20BD4 /* Pods-kubakbtsheet_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kubakbtsheet_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		711E455F3284451BF05E2F0B4BAB692A /* SheetContentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetContentViewController.swift; path = kubakbtsheet/Classes/SheetContentViewController.swift; sourceTree = "<group>"; };
+		756C10BA57D87B01742A946697512D8E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		756EA3095977783140270BF47D178AE2 /* Pods-kubakbtsheet_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kubakbtsheet_Example.release.xcconfig"; sourceTree = "<group>"; };
-		79B1E8B68C94DFF8FB503F7916368EB8 /* kubakbtsheet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "kubakbtsheet-dummy.m"; sourceTree = "<group>"; };
-		7C078FD61F68CE5DE9BE2D39F6E820A7 /* kubakbtsheet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = kubakbtsheet.debug.xcconfig; sourceTree = "<group>"; };
 		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		833BB9D8A755E8101EA0D1A6F2D3C60F /* kubakbtsheet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = kubakbtsheet.release.xcconfig; sourceTree = "<group>"; };
 		87D0C0495CA5116B6E750D26EEDB89B7 /* Pods-kubakbtsheet_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kubakbtsheet_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		87FD4E4731644E42C6C767FF06E9C7EE /* kubakbtsheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = kubakbtsheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87FD4E4731644E42C6C767FF06E9C7EE /* kubakbtsheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = kubakbtsheet.framework; path = kubakbtsheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		8E2B9941E9226A4B4514187006D5602B /* Pods-kubakbtsheet_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kubakbtsheet_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		91EAB657AC129EEDB5F212B8B3F8CD3D /* kubakbtsheet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "kubakbtsheet-dummy.m"; sourceTree = "<group>"; };
 		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
 		949A77994BCE1A84EF1FA7AC58996A45 /* Pods-kubakbtsheet_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kubakbtsheet_Example-Info.plist"; sourceTree = "<group>"; };
 		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
+		9B41B819368CC6486F19EB6DC2260AE0 /* Localize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
 		9D6276287F326EE7AA77EBD7162561C1 /* Pods-kubakbtsheet_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kubakbtsheet_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A926170EF612743B51D9CAB9322BC19A /* Pods_kubakbtsheet_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kubakbtsheet_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC5E42A73A8FB21EB2A1DD008D81C20B /* kubakbtsheet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = kubakbtsheet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D643A5DEB0708159771732989CE9A66 /* SheetViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetViewDelegate.swift; path = kubakbtsheet/Classes/SheetViewDelegate.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A926170EF612743B51D9CAB9322BC19A /* Pods_kubakbtsheet_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_kubakbtsheet_Example.framework; path = "Pods-kubakbtsheet_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		B6111D73B0BADEE3B1B8CBACEDD47949 /* Pods-kubakbtsheet_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kubakbtsheet_Example-dummy.m"; sourceTree = "<group>"; };
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		BE8D11C7E2422EF133BE80EE7E5BC3C7 /* Pods-kubakbtsheet_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kubakbtsheet_Example-frameworks.sh"; sourceTree = "<group>"; };
 		C836F79F2F493FABA08F05B5D6E83617 /* Pods-kubakbtsheet_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kubakbtsheet_Tests-Info.plist"; sourceTree = "<group>"; };
+		CB32E918C68E4D2BEE1D349EDC0862BA /* SheetSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetSize.swift; path = kubakbtsheet/Classes/SheetSize.swift; sourceTree = "<group>"; };
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
-		D91CE66FC95B26B998659C6780328970 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DDF04860DE1B145E4D94554AADA6DBEF /* kubakbtsheet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "kubakbtsheet-umbrella.h"; sourceTree = "<group>"; };
+		DE1EDF657E36450E174C21DA4A6E7943 /* SheetView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetView.swift; path = kubakbtsheet/Classes/SheetView.swift; sourceTree = "<group>"; };
+		E5FB4C55FDD744E0B4A4292BAA9C6F39 /* SheetViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetViewController.swift; path = kubakbtsheet/Classes/SheetViewController.swift; sourceTree = "<group>"; };
 		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		EB443F73F1BF943902FB0CD82C6BE15C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		EF1601E9F23A25E2EE7B714F1FED8A5B /* Pods_kubakbtsheet_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kubakbtsheet_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA41794C8F6985B379D00A22AF23E041 /* kubakbtsheet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = kubakbtsheet.debug.xcconfig; sourceTree = "<group>"; };
+		EF1601E9F23A25E2EE7B714F1FED8A5B /* Pods_kubakbtsheet_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_kubakbtsheet_Tests.framework; path = "Pods-kubakbtsheet_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49819AA5BE042465AF08086EFFBB0F4 /* kubakbtsheet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = kubakbtsheet.modulemap; sourceTree = "<group>"; };
 		FA67605DA6F2388E6F10087B48ABE080 /* Pods-kubakbtsheet_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-kubakbtsheet_Example.modulemap"; sourceTree = "<group>"; };
-		FAF43CF5179E05018F3B3210152EE176 /* kubakbtsheet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "kubakbtsheet-prefix.pch"; sourceTree = "<group>"; };
 		FD09A3B416D8136CD3257BFD09F491FF /* Pods-kubakbtsheet_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kubakbtsheet_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD7C090D3DB0A05CD3A9811A3D7E7B6B /* SheetOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetOptions.swift; path = kubakbtsheet/Classes/SheetOptions.swift; sourceTree = "<group>"; };
 		FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,19 +162,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		236ACE4D697E2B9215B72836EEB7894D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				620EDFE4F2075ECF5C418ACA078C8044 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7EA080919F105A94A4D491E1B7596BCD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EA78147046A316434FABA56174E50FFD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95425A8829127131E296177053FF5BCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9617928B72369CD12C840EE270C07780 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,16 +192,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03F5F8422577D2B900E05CD1 /* Localization */ = {
-			isa = PBXGroup;
-			children = (
-				03F5F8432577D2B900E05CD1 /* Localize.swift */,
-				03F5F8442577D2B900E05CD1 /* Localizable.strings */,
-			);
-			name = Localization;
-			path = kubakbtsheet/Classes/Localization;
-			sourceTree = "<group>";
-		};
 		0E44F9D9C61460B6E1920B970A2EA212 /* Pods-kubakbtsheet_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,29 +218,19 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		2A8F979764C4725357C6389334354822 /* Support Files */ = {
+		2971BE3D5BA34A97D7C31A3DA99F3F7A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2925F508D07A44122BC389ACECB73AF6 /* kubakbtsheet.modulemap */,
-				79B1E8B68C94DFF8FB503F7916368EB8 /* kubakbtsheet-dummy.m */,
-				350878192146DC9CF45FF9364638F15D /* kubakbtsheet-Info.plist */,
-				FAF43CF5179E05018F3B3210152EE176 /* kubakbtsheet-prefix.pch */,
-				3D8F4B1E69CB3D17A3E460BB58A46FF5 /* kubakbtsheet-umbrella.h */,
-				7C078FD61F68CE5DE9BE2D39F6E820A7 /* kubakbtsheet.debug.xcconfig */,
-				0F0B4CAE492A2EB7A6AA16A9DFB000A2 /* kubakbtsheet.release.xcconfig */,
+				F49819AA5BE042465AF08086EFFBB0F4 /* kubakbtsheet.modulemap */,
+				91EAB657AC129EEDB5F212B8B3F8CD3D /* kubakbtsheet-dummy.m */,
+				14F3EB6CADC6A204FAEA826259F9749C /* kubakbtsheet-Info.plist */,
+				3E9BDF28021109B509BCF179C44C2ACF /* kubakbtsheet-prefix.pch */,
+				DDF04860DE1B145E4D94554AADA6DBEF /* kubakbtsheet-umbrella.h */,
+				EA41794C8F6985B379D00A22AF23E041 /* kubakbtsheet.debug.xcconfig */,
+				833BB9D8A755E8101EA0D1A6F2D3C60F /* kubakbtsheet.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/kubakbtsheet";
-			sourceTree = "<group>";
-		};
-		3911BE6FC8DC0571D5C67487055018DC /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				AC5E42A73A8FB21EB2A1DD008D81C20B /* kubakbtsheet.podspec */,
-				EB443F73F1BF943902FB0CD82C6BE15C /* LICENSE */,
-				D91CE66FC95B26B998659C6780328970 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		440038C9F7DFCC0A33C224B632562F6C /* Products */ = {
@@ -285,6 +265,16 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
+		5BAE18FF9A7DB9247CD87A490D274E09 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4C227E05FFEC022C735775B4EA37AD1E /* kubakbtsheet.podspec */,
+				756C10BA57D87B01742A946697512D8E /* LICENSE */,
+				5C276DE249E5144A015E63D241004A43 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,35 +283,14 @@
 			name = SwiftSupport;
 			sourceTree = "<group>";
 		};
-		9235BD192411FF2B54BACC06AD660B4B /* Development Pods */ = {
+		9D7DC7E31E0B6FE6557B7F14FADA202E /* Localization */ = {
 			isa = PBXGroup;
 			children = (
-				9E46925DEB9AD9C8B51F49BB075A04F4 /* kubakbtsheet */,
+				1A1EE3DBB6B2CF1B53043636F907182A /* Localizable.strings */,
+				9B41B819368CC6486F19EB6DC2260AE0 /* Localize.swift */,
 			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		9E46925DEB9AD9C8B51F49BB075A04F4 /* kubakbtsheet */ = {
-			isa = PBXGroup;
-			children = (
-				03F5F83B2577D2B900E05CD1 /* InitialTouchPanGestureRecognizer.swift */,
-				03F5F8422577D2B900E05CD1 /* Localization */,
-				03F5F83D2577D2B900E05CD1 /* SheetContentViewController.swift */,
-				03F5F83C2577D2B900E05CD1 /* SheetContentViewDelegate.swift */,
-				03F5F8462577D2B900E05CD1 /* SheetOptions.swift */,
-				03F5F84A2577D2B900E05CD1 /* SheetSize.swift */,
-				03F5F8472577D2B900E05CD1 /* SheetTransition.swift */,
-				03F5F8492577D2B900E05CD1 /* SheetView.swift */,
-				03F5F8392577D2B900E05CD1 /* SheetViewController.swift */,
-				03F5F83A2577D2B900E05CD1 /* SheetViewDelegate.swift */,
-				03F5F83E2577D2B900E05CD1 /* UIColorExtension.swift */,
-				03F5F83F2577D2B900E05CD1 /* UIViewControllerExtension.swift */,
-				03F5F8402577D2B900E05CD1 /* Yalta.swift */,
-				3911BE6FC8DC0571D5C67487055018DC /* Pod */,
-				2A8F979764C4725357C6389334354822 /* Support Files */,
-			);
-			name = kubakbtsheet;
-			path = ../..;
+			name = Localization;
+			path = kubakbtsheet/Classes/Localization;
 			sourceTree = "<group>";
 		};
 		A80318F69EA58BF38B8EB84DB2885BA8 /* Pods-kubakbtsheet_Tests */ = {
@@ -339,6 +308,14 @@
 			);
 			name = "Pods-kubakbtsheet_Tests";
 			path = "Target Support Files/Pods-kubakbtsheet_Tests";
+			sourceTree = "<group>";
+		};
+		A8480FD095B4EEA881F1BEA3C8987D59 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0165850B7E009BF009BD1333D978270 /* kubakbtsheet */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */ = {
@@ -371,6 +348,7 @@
 				B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */,
 				906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */,
 			);
+			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -378,12 +356,35 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				9235BD192411FF2B54BACC06AD660B4B /* Development Pods */,
+				A8480FD095B4EEA881F1BEA3C8987D59 /* Development Pods */,
 				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
 				E81A37DBDE41E671312C56736544E2FA /* Pods */,
 				440038C9F7DFCC0A33C224B632562F6C /* Products */,
 				1AD7DBEA4492A7407A278753C51F00E8 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		E0165850B7E009BF009BD1333D978270 /* kubakbtsheet */ = {
+			isa = PBXGroup;
+			children = (
+				25112C62E0F16251E9B7BEDC9E082371 /* InitialTouchPanGestureRecognizer.swift */,
+				711E455F3284451BF05E2F0B4BAB692A /* SheetContentViewController.swift */,
+				106ED042263B72DB02DAA1D5CD136C62 /* SheetContentViewDelegate.swift */,
+				FD7C090D3DB0A05CD3A9811A3D7E7B6B /* SheetOptions.swift */,
+				CB32E918C68E4D2BEE1D349EDC0862BA /* SheetSize.swift */,
+				49B3EA4014B8BBA88C73E48E177A8895 /* SheetTransition.swift */,
+				DE1EDF657E36450E174C21DA4A6E7943 /* SheetView.swift */,
+				E5FB4C55FDD744E0B4A4292BAA9C6F39 /* SheetViewController.swift */,
+				9D643A5DEB0708159771732989CE9A66 /* SheetViewDelegate.swift */,
+				262AA60B2A64D94A891DB9B21541B427 /* UIColorExtension.swift */,
+				2FAF8EFF0387BA32AE5F2F4947B89215 /* UIViewControllerExtension.swift */,
+				58D8ECB33D255188023206FE9C2D0661 /* Yalta.swift */,
+				9D7DC7E31E0B6FE6557B7F14FADA202E /* Localization */,
+				5BAE18FF9A7DB9247CD87A490D274E09 /* Pod */,
+				2971BE3D5BA34A97D7C31A3DA99F3F7A /* Support Files */,
+			);
+			name = kubakbtsheet;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		E81A37DBDE41E671312C56736544E2FA /* Pods */ = {
@@ -408,11 +409,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2AE2BB71A2B6242AF4D073FCA360B7F8 /* Headers */ = {
+		083F7D85034E8B363594481249E2490A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F51FF5A7B79833FD8DC9EB867707E349 /* kubakbtsheet-umbrella.h in Headers */,
+				A9D58013CAAA2D94A2AAFBB186A1C51B /* kubakbtsheet-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +463,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				77450D7C94DACDB80575A6D838A87497 /* PBXTargetDependency */,
+				32541CD60A3C9CD6FEA7883A95B4B7B5 /* PBXTargetDependency */,
 			);
 			name = "Pods-kubakbtsheet_Example";
 			productName = "Pods-kubakbtsheet_Example";
@@ -489,12 +490,12 @@
 		};
 		AE6DE13B988B959B76C2F5A2183D322C /* kubakbtsheet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E6DC2CC5AA42D18817FC2F0211323CC /* Build configuration list for PBXNativeTarget "kubakbtsheet" */;
+			buildConfigurationList = 1D97625EE7F2740602902E655F4158E2 /* Build configuration list for PBXNativeTarget "kubakbtsheet" */;
 			buildPhases = (
-				2AE2BB71A2B6242AF4D073FCA360B7F8 /* Headers */,
-				47423C94C2F3401216A29BAB079F5230 /* Sources */,
-				236ACE4D697E2B9215B72836EEB7894D /* Frameworks */,
-				34B8249F3236C31B48572B1B35CB665E /* Resources */,
+				083F7D85034E8B363594481249E2490A /* Headers */,
+				F2088AEA7251CC95C5569E10863CEBFA /* Sources */,
+				95425A8829127131E296177053FF5BCF /* Frameworks */,
+				FA0F728FC379487D8BD0AD7F6BB2A0C5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -517,8 +518,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				63069B6A990B071BE1538509E7A8EA0E /* PBXTargetDependency */,
-				336B4B5555DB1A1D8A474E51E4660EAE /* PBXTargetDependency */,
+				CAAF17FAFD5CC478747DB4275244C708 /* PBXTargetDependency */,
+				25B2164F6F8085D90A683E1617D9765B /* PBXTargetDependency */,
 			);
 			name = "Pods-kubakbtsheet_Tests";
 			productName = "Pods-kubakbtsheet_Tests";
@@ -533,11 +534,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
-				TargetAttributes = {
-					AE6DE13B988B959B76C2F5A2183D322C = {
-						LastSwiftMigration = 1220;
-					};
-				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -561,14 +557,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		34B8249F3236C31B48572B1B35CB665E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				03F5F8552577D2B900E05CD1 /* Localizable.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5CC655F1A6C7A45A9693160581076BAE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -590,6 +578,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA0F728FC379487D8BD0AD7F6BB2A0C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -598,27 +593,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1720DA2E2DA4FE0C8DD9EFDDDC4D2F9F /* Pods-kubakbtsheet_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		47423C94C2F3401216A29BAB079F5230 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				03F5F84E2577D2B900E05CD1 /* SheetContentViewDelegate.swift in Sources */,
-				03F5F8502577D2B900E05CD1 /* UIColorExtension.swift in Sources */,
-				03F5F8542577D2B900E05CD1 /* Localize.swift in Sources */,
-				03F5F84D2577D2B900E05CD1 /* InitialTouchPanGestureRecognizer.swift in Sources */,
-				03F5F8572577D2B900E05CD1 /* SheetTransition.swift in Sources */,
-				03F5F8592577D2B900E05CD1 /* SheetView.swift in Sources */,
-				03F5F85A2577D2B900E05CD1 /* SheetSize.swift in Sources */,
-				03F5F84C2577D2B900E05CD1 /* SheetViewDelegate.swift in Sources */,
-				03F5F8522577D2B900E05CD1 /* Yalta.swift in Sources */,
-				03F5F8512577D2B900E05CD1 /* UIViewControllerExtension.swift in Sources */,
-				03F5F84B2577D2B900E05CD1 /* SheetViewController.swift in Sources */,
-				03F5F84F2577D2B900E05CD1 /* SheetContentViewController.swift in Sources */,
-				03F5F8562577D2B900E05CD1 /* SheetOptions.swift in Sources */,
-				79CE02FE13A2EEC410898AD547FC1097 /* kubakbtsheet-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,73 +620,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F2088AEA7251CC95C5569E10863CEBFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10E670A424CA02862897DCC28FD3473 /* InitialTouchPanGestureRecognizer.swift in Sources */,
+				D6A9EC1B43C5DAD165D81A5D3D24FEA4 /* kubakbtsheet-dummy.m in Sources */,
+				110E97953D68604EB40CAA110D70CC51 /* Localizable.strings in Sources */,
+				CE3DA3A1AD0C154DB6A96D9B25A3A8CC /* Localize.swift in Sources */,
+				979CBFD094EFBFC63770C965A41975FE /* SheetContentViewController.swift in Sources */,
+				F9F9957533E80D3109490DB4307E258F /* SheetContentViewDelegate.swift in Sources */,
+				57D649632A7110A6511590081025E62A /* SheetOptions.swift in Sources */,
+				212F2A8E37FAFE8EEE594F6479DBC905 /* SheetSize.swift in Sources */,
+				E9655739211E211982E5F643A625D4EA /* SheetTransition.swift in Sources */,
+				370159FC8623A1993445A0F967C73586 /* SheetView.swift in Sources */,
+				0AD13A7F111EB596FF110D29ABBDAF36 /* SheetViewController.swift in Sources */,
+				4EFEECA4220A925AA68D31446DBA45D7 /* SheetViewDelegate.swift in Sources */,
+				1AEA5848692E934357DA14E182CF4815 /* UIColorExtension.swift in Sources */,
+				DD42B1846827B444BFCF6AB76C665CEE /* UIViewControllerExtension.swift in Sources */,
+				E157045542B35DBF3A24A12CC692B4EF /* Yalta.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		336B4B5555DB1A1D8A474E51E4660EAE /* PBXTargetDependency */ = {
+		25B2164F6F8085D90A683E1617D9765B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-kubakbtsheet_Example";
 			target = 7843E79AE388D24B6C5DF56D100FA5C0 /* Pods-kubakbtsheet_Example */;
-			targetProxy = B68511531540DABAD5FB2E08C7901A2A /* PBXContainerItemProxy */;
+			targetProxy = 241DF3E49633AF668D4CA40F1D85670D /* PBXContainerItemProxy */;
 		};
-		63069B6A990B071BE1538509E7A8EA0E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FBSnapshotTestCase;
-			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
-			targetProxy = 3DFA081C887BCFDF596795547EB7C728 /* PBXContainerItemProxy */;
-		};
-		77450D7C94DACDB80575A6D838A87497 /* PBXTargetDependency */ = {
+		32541CD60A3C9CD6FEA7883A95B4B7B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = kubakbtsheet;
 			target = AE6DE13B988B959B76C2F5A2183D322C /* kubakbtsheet */;
-			targetProxy = D8007076AE1692BDCC70C51B2690CDC7 /* PBXContainerItemProxy */;
+			targetProxy = 5A55D6149CA458C5CC100DB4AC8C4CE1 /* PBXContainerItemProxy */;
+		};
+		CAAF17FAFD5CC478747DB4275244C708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
+			targetProxy = 152A679CF1ECD073F2B625366583B653 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		03F5F8442577D2B900E05CD1 /* Localizable.strings */ = {
+		1A1EE3DBB6B2CF1B53043636F907182A /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				03F5F8452577D2B900E05CD1 /* Base */,
+				5795A07B87C50D7B558A05A9E898257C /* Localizable.strings */,
 			);
 			name = Localizable.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0A27564AA69C41AFB59D4A0B74E3995C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F0B4CAE492A2EB7A6AA16A9DFB000A2 /* kubakbtsheet.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/kubakbtsheet/kubakbtsheet-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/kubakbtsheet/kubakbtsheet-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/kubakbtsheet/kubakbtsheet.modulemap";
-				PRODUCT_MODULE_NAME = kubakbtsheet;
-				PRODUCT_NAME = kubakbtsheet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		0F9E7FE3E974E0D40A98B85FA0BF45C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 87D0C0495CA5116B6E750D26EEDB89B7 /* Pods-kubakbtsheet_Tests.release.xcconfig */;
@@ -772,6 +737,37 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2893645630C497E8F1709409D7856CA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA41794C8F6985B379D00A22AF23E041 /* kubakbtsheet.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/kubakbtsheet/kubakbtsheet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/kubakbtsheet/kubakbtsheet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/kubakbtsheet/kubakbtsheet.modulemap";
+				PRODUCT_MODULE_NAME = kubakbtsheet;
+				PRODUCT_NAME = kubakbtsheet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -863,9 +859,42 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6136784F8936605E57BB282A0836795D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 833BB9D8A755E8101EA0D1A6F2D3C60F /* kubakbtsheet.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/kubakbtsheet/kubakbtsheet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/kubakbtsheet/kubakbtsheet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/kubakbtsheet/kubakbtsheet.modulemap";
+				PRODUCT_MODULE_NAME = kubakbtsheet;
+				PRODUCT_NAME = kubakbtsheet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1031,46 +1060,14 @@
 			};
 			name = Release;
 		};
-		D35D93AEAD0124BD4D05D23760D49DBE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C078FD61F68CE5DE9BE2D39F6E820A7 /* kubakbtsheet.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/kubakbtsheet/kubakbtsheet-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/kubakbtsheet/kubakbtsheet-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/kubakbtsheet/kubakbtsheet.modulemap";
-				PRODUCT_MODULE_NAME = kubakbtsheet;
-				PRODUCT_NAME = kubakbtsheet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0E6DC2CC5AA42D18817FC2F0211323CC /* Build configuration list for PBXNativeTarget "kubakbtsheet" */ = {
+		1D97625EE7F2740602902E655F4158E2 /* Build configuration list for PBXNativeTarget "kubakbtsheet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D35D93AEAD0124BD4D05D23760D49DBE /* Debug */,
-				0A27564AA69C41AFB59D4A0B74E3995C /* Release */,
+				2893645630C497E8F1709409D7856CA9 /* Debug */,
+				6136784F8936605E57BB282A0836795D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

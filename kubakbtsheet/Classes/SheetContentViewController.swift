@@ -121,6 +121,14 @@ public class SheetContentViewController: UIViewController {
     }
     
     private func updateCornerRadius() {
+
+        self.contentView.layer.shadowColor = UIColor.black.cgColor
+        self.contentView.layer.shadowOpacity = 0.5
+        self.contentView.layer.shadowOffset = .zero
+        self.contentView.layer.shadowRadius = 10
+
+        
+        
         self.contentWrapperView.layer.cornerRadius = self.treatPullBarAsClear ? 0 : self.cornerRadius
         self.childContainerView.layer.cornerRadius = self.treatPullBarAsClear ? self.cornerRadius : 0
     }
