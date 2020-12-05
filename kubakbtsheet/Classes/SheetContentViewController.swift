@@ -122,10 +122,10 @@ public class SheetContentViewController: UIViewController {
     
     private func updateCornerRadius() {
 
-        self.contentView.layer.shadowColor = UIColor.black.cgColor
-        self.contentView.layer.shadowOpacity = 0.5
+        self.contentView.layer.shadowColor = options.shadowColor
+        self.contentView.layer.shadowOpacity = options.shadowOpacity//0.5
         self.contentView.layer.shadowOffset = .zero
-        self.contentView.layer.shadowRadius = 10
+        self.contentView.layer.shadowRadius = options.shadowRadius
 
         
         

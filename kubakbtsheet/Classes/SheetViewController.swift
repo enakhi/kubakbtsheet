@@ -12,8 +12,10 @@ import UIKit
 public class SheetViewController: UIViewController {
     public private(set) var options: SheetOptions
     
+    var positionListener: [kbBottomSheetListener] = []
     /// Default value for autoAdjustToKeyboard. Defaults to true.
     public static var autoAdjustToKeyboard = true
+    
     /// Automatically grow/move the sheet to accomidate the keyboard. Defaults to false.
     public var autoAdjustToKeyboard = SheetViewController.autoAdjustToKeyboard
     
@@ -40,6 +42,20 @@ public class SheetViewController: UIViewController {
         didSet {
             self.updateAccessibility()
         }
+    }
+    func positionChanged(curentPos: CGFloat,screenHeight: CGFloat) -> Void {
+        for lis in positionListener {
+                lis.positionChanged(curentPosition: curentPos, screenHeight: screenHeight)
+            
+        }
+    }
+    public func addPositionStateListener(listener : kbBottomSheetListener){
+        for lis in positionListener {
+            if lis === listener{
+                return
+            }
+        }
+        positionListener+=[listener]
     }
     /// Dismisses the sheet by tapping on the background overlay
     public var dismissOnOverlayTap: Bool = true {
@@ -295,12 +311,12 @@ public class SheetViewController: UIViewController {
     
     private func addBlurBackground() {
         self.overlayView.addSubview(self.blurView)
-        blurView.effect = blurEffect
-        Constraints(for: self.blurView) {
-            $0.edges(.top, .left, .right, .bottom).pinToSuperview()
-        }
-        self.blurView.isUserInteractionEnabled = false
-        self.blurView.isHidden = !self.hasBlurBackground
+//        blurView.effect = blurEffect
+//        Constraints(for: self.blurView) {
+//            $0.edges(.top, .left, .right, .bottom).pinToSuperview()
+//        }
+//        self.blurView.isUserInteractionEnabled = false
+//        self.blurView.isHidden = !self.hasBlurBackground
     }
     
     private func addOverlayTapView() {
@@ -551,6 +567,7 @@ public class SheetViewController: UIViewController {
         } else {
             fullscreenHeight = self.view.bounds.height - self.view.safeAreaInsets.top - self.minimumSpaceAbovePullBar
         }
+        positionChanged(curentPos: finalh, screenHeight: fullscreenHeight)
 //        print("\(fullscreenHeight):\(finalh)")
         if finalh >= fullscreenHeight*0.8 {
             let a = fullscreenHeight-finalh

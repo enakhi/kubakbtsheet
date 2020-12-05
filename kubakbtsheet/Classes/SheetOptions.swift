@@ -38,6 +38,9 @@ public struct SheetOptions {
     /// Set true to be able to use the sheet view controller as a subview instead of a modal. Defaults to false.
     public var useInlineMode = false
     
+    public var shadowOpacity:Float = 0.15;
+    public var shadowRadius :CGFloat = 10;
+    public var shadowColor = UIColor.black.cgColor
     /* These properties will be removed in an upcoming release, leaving them for now so people can transition slowly */
     
     @available(*, deprecated, message: "minimumSpaceAbovePullBar is now a property on SheetViewController")

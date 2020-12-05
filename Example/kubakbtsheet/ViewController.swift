@@ -8,13 +8,85 @@
 import kubakbtsheet
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController ,kbBottomSheetListener{
+    var mainView:UIView?
+    func positionChanged(curentPosition: CGFloat, screenHeight: CGFloat) {
+        //print("\(curentPosition)")
+        let a:CGFloat
+        let b:CGFloat
+        if curentPosition >= screenHeight*0.5 {
+            b = screenHeight * 0.5
+            a = curentPosition-b
+
+        }
+        else{
+            a=0
+            b=1
+        }
+//        mainView!.removeConstraints(mainView!.constraints)
+//        print("\(curentPosition):\(screenHeight)")
+        var customConstraints = self.constraints
+        NSLayoutConstraint.deactivate(customConstraints)
+        customConstraints.forEach { $0.isActive = false }
+        customConstraints.removeAll()
+        self.constraints = [
+            mainView!.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            mainView!.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            mainView!.widthAnchor.constraint(equalTo: view.widthAnchor,constant: (-50*(a/b))),
+            mainView!.heightAnchor.constraint(equalTo: view.heightAnchor,constant: (-20*(a/b)))
+        ]
+        
+        NSLayoutConstraint.activate(self.constraints)
+        mainView!.layoutIfNeeded()
+//
+        
+//        let constraints = [
+//            viewA.topAnchor.constraint(equalTo: view.topAnchor),
+//            viewA.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 40),
+//            viewA.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+//            viewA.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 40)
+//        ]
+//        mainView!.translatesA/utoresizingMaskIntoConstraints = false
+//        NSLayoutConstraint.ac/tivate(constraints)
+    }
+    var constraints:[NSLayoutConstraint] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let sheet = buildBottomSheet(useInlineMode: true)
         
         // Add child
+        mainView = UIView()
+
+        
+        
+        mainView!.backgroundColor = .red
+        view.addSubview(mainView!)
+        
+        self.constraints = [
+            mainView!.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            mainView!.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            mainView!.widthAnchor.constraint(equalTo: view.widthAnchor),
+            mainView!.heightAnchor.constraint(equalTo: view.heightAnchor )
+        ]
+//        NSLayoutConstraint.activate(constraints)
+//
+        
+//        let constraints = [
+//            viewA.topAnchor.constraint(equalTo: view.topAnchor),
+//            viewA.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 40),
+//            viewA.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+//            viewA.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 40)
+//        ]
+        mainView!.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate(constraints)
+        
+        let button = UIButton(type: .system) // let preferred over var here
+        button.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
+        button.backgroundColor = UIColor.green
+        button.setTitle("Button", for: UIControl.State.normal)
+        self.view.addSubview(button)
+        
         sheet.willMove(toParent: self)
         self.addChild(sheet)
         self.view.addSubview(sheet.view)
@@ -27,7 +99,6 @@ class ViewController: UIViewController {
             sheet.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             sheet.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
         ])
-        
 //        sheet.didDismiss = { [weak self] _ in
 //            print("did dismiss")
 //            self?.mapView?.removeFromSuperview()
@@ -77,11 +148,16 @@ class ViewController: UIViewController {
 //                                        sizes: [.percent(0.8), .fullscreen],
                                         sizes: [.fixed(200), .fixed(300), .fixed(450), .marginFromTop(200),.fullscreen],
                                         options: options)
+        sheet.addPositionStateListener(listener: self)
         sheet.hasBlurBackground = true
         sheet.dismissOnPull = false
         sheet.dismissOnOverlayTap = false
         sheet.cornerRadius = 30
         sheet.gripSize = CGSize(width: 100, height: 12)
+        
+        
+        sheet.overlayColor = UIColor.clear
+        sheet.allowGestureThroughOverlay = true
         return sheet
     }
 }
