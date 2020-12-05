@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0391614E257B5E7B000216A1 /* kbBottomSheetListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0391614D257B5E7B000216A1 /* kbBottomSheetListener.swift */; };
+		03916201257BAC59000216A1 /* kbBottomSheetListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03916200257BAC59000216A1 /* kbBottomSheetListener.swift */; };
 		0AD13A7F111EB596FF110D29ABBDAF36 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB4C55FDD744E0B4A4292BAA9C6F39 /* SheetViewController.swift */; };
 		110E97953D68604EB40CAA110D70CC51 /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 5795A07B87C50D7B558A05A9E898257C /* Localizable.strings */; };
 		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */; };
@@ -79,7 +79,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0391614D257B5E7B000216A1 /* kbBottomSheetListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kbBottomSheetListener.swift; sourceTree = "<group>"; };
+		03916200257BAC59000216A1 /* kbBottomSheetListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = kbBottomSheetListener.swift; path = kubakbtsheet/Classes/kbBottomSheetListener.swift; sourceTree = "<group>"; };
 		046533C72FA5CA68117B830B99ABC591 /* Pods-kubakbtsheet_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kubakbtsheet_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		1008A4D72B5B0763D2A2AC6CB3310845 /* Pods-kubakbtsheet_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kubakbtsheet_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -368,6 +368,7 @@
 		E0165850B7E009BF009BD1333D978270 /* kubakbtsheet */ = {
 			isa = PBXGroup;
 			children = (
+				03916200257BAC59000216A1 /* kbBottomSheetListener.swift */,
 				25112C62E0F16251E9B7BEDC9E082371 /* InitialTouchPanGestureRecognizer.swift */,
 				711E455F3284451BF05E2F0B4BAB692A /* SheetContentViewController.swift */,
 				106ED042263B72DB02DAA1D5CD136C62 /* SheetContentViewDelegate.swift */,
@@ -380,7 +381,6 @@
 				262AA60B2A64D94A891DB9B21541B427 /* UIColorExtension.swift */,
 				2FAF8EFF0387BA32AE5F2F4947B89215 /* UIViewControllerExtension.swift */,
 				58D8ECB33D255188023206FE9C2D0661 /* Yalta.swift */,
-				0391614D257B5E7B000216A1 /* kbBottomSheetListener.swift */,
 				9D7DC7E31E0B6FE6557B7F14FADA202E /* Localization */,
 				5BAE18FF9A7DB9247CD87A490D274E09 /* Pod */,
 				2971BE3D5BA34A97D7C31A3DA99F3F7A /* Support Files */,
@@ -633,7 +633,7 @@
 				979CBFD094EFBFC63770C965A41975FE /* SheetContentViewController.swift in Sources */,
 				F9F9957533E80D3109490DB4307E258F /* SheetContentViewDelegate.swift in Sources */,
 				57D649632A7110A6511590081025E62A /* SheetOptions.swift in Sources */,
-				0391614E257B5E7B000216A1 /* kbBottomSheetListener.swift in Sources */,
+				03916201257BAC59000216A1 /* kbBottomSheetListener.swift in Sources */,
 				212F2A8E37FAFE8EEE594F6479DBC905 /* SheetSize.swift in Sources */,
 				E9655739211E211982E5F643A625D4EA /* SheetTransition.swift in Sources */,
 				370159FC8623A1993445A0F967C73586 /* SheetView.swift in Sources */,
@@ -683,7 +683,6 @@
 /* Begin XCBuildConfiguration section */
 		0F9E7FE3E974E0D40A98B85FA0BF45C1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87D0C0495CA5116B6E750D26EEDB89B7 /* Pods-kubakbtsheet_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -716,7 +715,6 @@
 		};
 		1BFD9F4CDC52D32F59AFE4CE36D0C506 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A689CB8CF42D5C86D11AB0ED7D20BD4 /* Pods-kubakbtsheet_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -748,7 +746,6 @@
 		};
 		2893645630C497E8F1709409D7856CA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA41794C8F6985B379D00A22AF23E041 /* kubakbtsheet.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -779,7 +776,6 @@
 		};
 		3E39A517897BFCDD1DD7268CB1B69BE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -870,7 +866,6 @@
 		};
 		6136784F8936605E57BB282A0836795D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 833BB9D8A755E8101EA0D1A6F2D3C60F /* kubakbtsheet.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -968,7 +963,6 @@
 		};
 		7CE0D8EDC866B6FCA286DA77A3EA6E1C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6413F2880DB624A6E1238F39C98A0CB3 /* Pods-kubakbtsheet_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1000,7 +994,6 @@
 		};
 		9738034FD16652C83812E8BA63EA3E1B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 756EA3095977783140270BF47D178AE2 /* Pods-kubakbtsheet_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1033,7 +1026,6 @@
 		};
 		BF531801B332EDF71FA8F4F9667B86BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
