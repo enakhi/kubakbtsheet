@@ -4,6 +4,7 @@
 //
 //  Created by Behnam Hosseini on 12/5/20.
 //
+import Foundation
 
 @objc public protocol kbBottomSheetListener: AnyObject {
     
