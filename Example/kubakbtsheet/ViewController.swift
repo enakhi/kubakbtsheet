@@ -149,7 +149,7 @@ class ViewController: UIViewController ,kbBottomSheetListener{
                                         sizes: [.fixed(200), .fixed(300), .fixed(450), .marginFromTop(200),.fullscreen],
                                         options: options)
         sheet.addPositionStateListener(listener: self)
-        sheet.hasBlurBackground = true
+//        sheet.hasBlurBackground = true
         sheet.dismissOnPull = false
         sheet.dismissOnOverlayTap = false
         sheet.cornerRadius = 30

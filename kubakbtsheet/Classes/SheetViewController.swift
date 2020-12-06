@@ -311,12 +311,12 @@ public class SheetViewController: UIViewController {
     
     private func addBlurBackground() {
         self.overlayView.addSubview(self.blurView)
-//        blurView.effect = blurEffect
-//        Constraints(for: self.blurView) {
-//            $0.edges(.top, .left, .right, .bottom).pinToSuperview()
-//        }
-//        self.blurView.isUserInteractionEnabled = false
-//        self.blurView.isHidden = !self.hasBlurBackground
+        blurView.effect = blurEffect
+        Constraints(for: self.blurView) {
+            $0.edges(.top, .left, .right, .bottom).pinToSuperview()
+        }
+        self.blurView.isUserInteractionEnabled = false
+        self.blurView.isHidden = !self.hasBlurBackground
     }
     
     private func addOverlayTapView() {

@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - kubakbtsheet (0.1.0)
+  - kubakbtsheet (0.1.2)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  kubakbtsheet: 8dce3e6bba333e655c2621aedfed99b44247acf9
+  kubakbtsheet: 5f635965ba8f1fff358932b604a37db5b6462fbc
 
 PODFILE CHECKSUM: 6bc8bbf10f96dbe5fb04eb8cdfe6c9404ee4b226
 
