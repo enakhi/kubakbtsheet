@@ -86,6 +86,16 @@ class ViewController: UIViewController ,kbBottomSheetListener{
         button.backgroundColor = UIColor.green
         button.setTitle("Button", for: UIControl.State.normal)
         self.view.addSubview(button)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            button.topAnchor.constraint(equalTo: self.view.topAnchor),
+            button.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+            button.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            button.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
+        ])
+        
+        
+        
         
         sheet.willMove(toParent: self)
         self.addChild(sheet)
@@ -152,6 +162,7 @@ class ViewController: UIViewController ,kbBottomSheetListener{
 //        sheet.hasBlurBackground = true
         sheet.dismissOnPull = false
         sheet.dismissOnOverlayTap = false
+        sheet.overlayColor=UIColor.clear
         sheet.cornerRadius = 30
         sheet.gripSize = CGSize(width: 100, height: 12)
         

@@ -578,12 +578,19 @@ public class SheetViewController: UIViewController {
         self.cornerRadius=12
         }
     }
+    
+    public var resizeAnimationDuration:TimeInterval = 0.7
+    public var inoutAnimationDuration:TimeInterval = 0.4
     public func resize(to size: SheetSize,
-                       duration: TimeInterval = 0.2,
+                       duration: TimeInterval = -1.0,
                        options: UIView.AnimationOptions = [.curveEaseOut],
                        animated: Bool = true,
                        complete: (() -> Void)? = nil) {
-        
+        var d=duration
+        if duration == -1.0{
+            d=resizeAnimationDuration
+        }
+        let duration=d
         let previousSize = self.currentSize
         self.currentSize = size
         
@@ -616,16 +623,22 @@ public class SheetViewController: UIViewController {
         }
     }
     
-    public func attemptDismiss(animated: Bool) {
+    public func attemptDismiss(animated: Bool,removeFromParent:Bool=false,hide:Bool=true) {
         if self.shouldDismiss?(self) != false {
             if self.options.useInlineMode {
                 if animated {
-                    self.animateOut {
+                    self.animateOut(removeFromParent: removeFromParent, hide: hide) {
                         self.didDismiss?(self)
                     }
                 } else {
+                    if removeFromParent {
                     self.view.removeFromSuperview()
                     self.removeFromParent()
+                    }
+                    if hide {
+                        self.view.layer.opacity=0
+                        self.view.isUserInteractionEnabled=false
+                    }
                     self.didDismiss?(self)
                 }
             } else {
@@ -635,7 +648,12 @@ public class SheetViewController: UIViewController {
     }
     
     /// Animates the sheet in, but only if presenting using the inline mode
-    public func animateIn(duration: TimeInterval = 0.3, completion: (() -> Void)? = nil) {
+    public func animateIn(duration: TimeInterval = -1.0, completion: (() -> Void)? = nil) {
+        var d=duration
+        if duration == -1.0{
+            d=inoutAnimationDuration
+        }
+        let duration=d
         guard self.options.useInlineMode else { return }
         self.view.superview?.layoutIfNeeded()
         self.contentViewController.updatePreferredHeight()
@@ -644,7 +662,8 @@ public class SheetViewController: UIViewController {
         contentView.transform = CGAffineTransform(translationX: 0, y: contentView.bounds.height)
         self.overlayView.alpha = 0
         self.updateOrderedSizes()
-        
+        self.view.layer.opacity=1
+        self.view.isUserInteractionEnabled=true
         UIView.animate(
             withDuration: duration,
             animations: {
@@ -652,13 +671,19 @@ public class SheetViewController: UIViewController {
                 self.overlayView.alpha = 1
             },
             completion: { _ in
+                
                 completion?()
             }
         )
     }
     
     /// Animates the sheet out, but only if presenting using the inline mode
-    public func animateOut(duration: TimeInterval = 0.3, completion: (() -> Void)? = nil) {
+    public func animateOut(duration: TimeInterval = -1.0,removeFromParent:Bool=false,hide:Bool=true, completion: (() -> Void)? = nil) {
+        var d=duration
+        if duration == -1.0{
+            d=resizeAnimationDuration
+        }
+        let duration=d
         guard self.options.useInlineMode else { return }
         let contentView = self.contentViewController.contentView
         
@@ -669,8 +694,14 @@ public class SheetViewController: UIViewController {
                 self.overlayView.alpha = 0
             },
             completion: { _ in
+                if removeFromParent {
                 self.view.removeFromSuperview()
                 self.removeFromParent()
+                }
+                if hide {
+                    self.view.layer.opacity=0
+                    self.view.isUserInteractionEnabled=false
+                }
                 completion?()
             }
         )
