@@ -429,7 +429,7 @@ public class SheetViewController: UIViewController {
                     // They swiped hard, always just close the sheet when they do
                     finalHeight = -1
                 }
-                let d:CGFloat = CGFloat(inoutAnimationDuration)
+                let d:CGFloat = CGFloat(resizeAnimationDuration)
                 let animationDuration = TimeInterval(abs(CGFloat(velocity) * (d / 1000.0) ) + d)
                 
                 guard finalHeight > 0 || !self.dismissOnPull else {
@@ -579,7 +579,7 @@ public class SheetViewController: UIViewController {
         }
     }
     
-    public var resizeAnimationDuration:TimeInterval = 0.9
+    public var resizeAnimationDuration:TimeInterval = 0.6
     public var inoutAnimationDuration:TimeInterval = 0.4
     public func resize(to size: SheetSize,
                        duration: TimeInterval = -1.0,
@@ -646,9 +646,13 @@ public class SheetViewController: UIViewController {
             }
         }
     }
-    
+    var ishide:Bool=true
     /// Animates the sheet in, but only if presenting using the inline mode
     public func animateIn(duration: TimeInterval = -1.0, completion: (() -> Void)? = nil) {
+        if !ishide{
+        return
+        }
+        ishide=false
         var d=duration
         if duration == -1.0{
             d=inoutAnimationDuration
@@ -682,9 +686,13 @@ public class SheetViewController: UIViewController {
     
     /// Animates the sheet out, but only if presenting using the inline mode
     public func animateOut(duration: TimeInterval = -1.0,removeFromParent:Bool=false,hide:Bool=true, completion: (() -> Void)? = nil) {
+        if ishide{
+        return
+        }
+        ishide=true
         var d=duration
         if duration == -1.0{
-            d=resizeAnimationDuration
+            d=inoutAnimationDuration
         }
         let duration=d
         guard self.options.useInlineMode else { return }
