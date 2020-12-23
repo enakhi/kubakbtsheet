@@ -402,7 +402,7 @@ public class SheetViewController: UIViewController {
         self.corectCorners(newHeight)
         switch gesture.state {
             case .cancelled, .failed:
-                UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseOut], animations: {
+                UIView.animate(withDuration: inoutAnimationDuration, delay: 0, options: [.curveEaseOut], animations: {
                     self.contentViewController.view.transform = CGAffineTransform.identity
                     self.contentViewHeightConstraint.constant = self.height(for: self.currentSize)
                     self.transition.setPresentor(percentComplete: 0)
@@ -429,8 +429,8 @@ public class SheetViewController: UIViewController {
                     // They swiped hard, always just close the sheet when they do
                     finalHeight = -1
                 }
-                
-                let animationDuration = TimeInterval(abs(velocity*0.0002) + 0.2)
+                let d:CGFloat = CGFloat(inoutAnimationDuration)
+                let animationDuration = TimeInterval(abs(CGFloat(velocity) * (d / 1000.0) ) + d)
                 
                 guard finalHeight > 0 || !self.dismissOnPull else {
                     // Dismiss
@@ -579,7 +579,7 @@ public class SheetViewController: UIViewController {
         }
     }
     
-    public var resizeAnimationDuration:TimeInterval = 0.7
+    public var resizeAnimationDuration:TimeInterval = 0.9
     public var inoutAnimationDuration:TimeInterval = 0.4
     public func resize(to size: SheetSize,
                        duration: TimeInterval = -1.0,
@@ -664,6 +664,9 @@ public class SheetViewController: UIViewController {
         self.updateOrderedSizes()
         self.view.layer.opacity=1
         self.view.isUserInteractionEnabled=true
+        self.additionalSafeAreaInsets = UIEdgeInsets(top: -self.options.pullBarHeight, left: 0, bottom: 0, right: 0)
+                self.updateOrderedSizes()
+                self.contentViewController.updatePreferredHeight()
         UIView.animate(
             withDuration: duration,
             animations: {
@@ -694,6 +697,9 @@ public class SheetViewController: UIViewController {
                 self.overlayView.alpha = 0
             },
             completion: { _ in
+                if let sc = self.childScrollView{
+                    sc.setContentOffset(.zero, animated: true)
+                }
                 if removeFromParent {
                 self.view.removeFromSuperview()
                 self.removeFromParent()
