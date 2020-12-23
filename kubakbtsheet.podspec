@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'kubakbtsheet'
-  s.version          = '0.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'kubakbtsheet is for bottom sheet'
 
 # This description is used to generate tags and improve search results.
