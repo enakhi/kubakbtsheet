@@ -706,8 +706,7 @@ public class SheetViewController: UIViewController {
             },
             completion: { _ in
                 if let sc = self.childScrollView{
-                    sc.setContentOffset(.zero, animated: true)
-                }
+                    sc.setContentOffset(CGPoint(x: 0, y: -self.options.pullBarHeight), animated: true)                }
                 if removeFromParent {
                 self.view.removeFromSuperview()
                 self.removeFromParent()
