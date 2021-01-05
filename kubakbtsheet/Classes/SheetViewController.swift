@@ -162,6 +162,7 @@ public class SheetViewController: UIViewController {
     
     public var shouldDismiss: ((SheetViewController) -> Bool)?
     public var didDismiss: ((SheetViewController) -> Void)?
+    public var didPulledDown: ((SheetViewController) -> Bool)?
     public var sizeChanged: ((SheetViewController, SheetSize, CGFloat) -> Void)?
     
     public private(set) var contentViewController: SheetContentViewController
@@ -380,12 +381,12 @@ public class SheetViewController: UIViewController {
             self.isPanning = true
         }
         
-        let minHeight: CGFloat = self.height(for: self.orderedSizes.first)
+        let minHeight: CGFloat = self.height(for: self.orderedSizes.first,justgetInfo: true)
         let maxHeight: CGFloat
         if self.allowPullingPastMaxHeight {
-            maxHeight = self.height(for: .fullscreen) // self.view.bounds.height
+            maxHeight = self.height(for: .fullscreen,justgetInfo: true) // self.view.bounds.height
         } else {
-            maxHeight = max(self.height(for: self.orderedSizes.last), self.prePanHeight)
+            maxHeight = max(self.height(for: self.orderedSizes.last,justgetInfo: true), self.prePanHeight)
         }
         
         var newHeight = max(0, self.prePanHeight + (self.firstPanPoint.y - point.y))
@@ -432,6 +433,13 @@ public class SheetViewController: UIViewController {
                 let d:CGFloat = CGFloat(resizeAnimationDuration)
                 let animationDuration = TimeInterval(abs(CGFloat(velocity) * (d / 1000.0) ) + d)
                 
+                if finalHeight <= 0  {
+                    if let a = self.didPulledDown?(self) {
+                        if a {
+                        return
+                        }
+                    }
+                }
                 guard finalHeight > 0 || !self.dismissOnPull else {
                     // Dismiss
                     UIView.animate(
@@ -534,7 +542,7 @@ public class SheetViewController: UIViewController {
         })
     }
     
-    private func height(for size: SheetSize?) -> CGFloat {
+    private func height(for size: SheetSize?,justgetInfo:Bool=false) -> CGFloat {
         guard let size = size else { return 0 }
         let contentHeight: CGFloat
         let fullscreenHeight: CGFloat
@@ -557,7 +565,9 @@ public class SheetViewController: UIViewController {
         }
         
         let finalh = min(fullscreenHeight, contentHeight)
+        if !justgetInfo{
         self.corectCorners(finalh)
+        }
         return finalh
     }
     private func corectCorners(_ finalh:CGFloat){
@@ -678,7 +688,8 @@ public class SheetViewController: UIViewController {
                 self.overlayView.alpha = 1
             },
             completion: { _ in
-                
+                let newHeight = self.height(for: self.currentSize)
+                    self.sizeChanged?(self, self.currentSize, newHeight)
                 completion?()
             }
         )
@@ -715,6 +726,8 @@ public class SheetViewController: UIViewController {
                     self.view.layer.opacity=0
                     self.view.isUserInteractionEnabled=false
                 }
+                let newHeight = self.height(for: self.currentSize)
+                self.sizeChanged?(self, self.currentSize, newHeight)
                 completion?()
             }
         )
@@ -752,6 +765,7 @@ extension SheetViewController: UIGestureRecognizerDelegate {
         guard pointInChildScrollView > 0, pointInChildScrollView < childScrollView.bounds.height else {
             if keyboardHeight > 0 {
                 childScrollView.endEditing(true)
+                childScrollView.setContentOffset(CGPoint(x: 0, y: -self.options.pullBarHeight), animated: true)
             }
             return true
         }
@@ -761,7 +775,7 @@ extension SheetViewController: UIGestureRecognizerDelegate {
         
         if velocity.y < 0 {
             let containerHeight = height(for: self.currentSize)
-            return height(for: self.orderedSizes.last) > containerHeight && containerHeight < height(for: SheetSize.fullscreen)
+            return height(for: self.orderedSizes.last,justgetInfo: true) > containerHeight && containerHeight < height(for: SheetSize.fullscreen,justgetInfo: true)
         } else {
             return true
         }

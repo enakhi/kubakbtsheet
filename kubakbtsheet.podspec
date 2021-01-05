@@ -1,3 +1,4 @@
+
 #
 # Be sure to run `pod lib lint kubakbtsheet.podspec' to ensure this is a
 # valid spec before submitting.
@@ -8,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'kubakbtsheet'
-  s.version          = '1.2.3'
+  s.version          = '1.2.4'
   s.summary          = 'kubakbtsheet is for bottom sheet'
 
 # This description is used to generate tags and improve search results.
