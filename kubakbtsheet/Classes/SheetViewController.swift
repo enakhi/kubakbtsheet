@@ -432,8 +432,10 @@ public class SheetViewController: UIViewController {
                 }
                 let d:CGFloat = CGFloat(resizeAnimationDuration)
                 let animationDuration = TimeInterval(abs(CGFloat(velocity) * (d / 1000.0) ) + d)
+                print("\(finalHeight):\(maxHeight):\(maxHeight*0.1)")
                 
-                if finalHeight <= 0  {
+                if finalHeight <= 0 || finalHeight < maxHeight*0.15   {
+                    //print(finalHeight)
                     if let a = self.didPulledDown?(self) {
                         if a {
                         return
