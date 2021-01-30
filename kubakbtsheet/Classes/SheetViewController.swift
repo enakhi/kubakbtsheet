@@ -502,6 +502,7 @@ public class SheetViewController: UIViewController {
                 }, completion: { complete in
                     self.isPanning = false
                     if previousSize != newSize {
+                        //ok
                         self.sizeChanged?(self, newSize, newContentHeight)
                     }
                 })
@@ -621,6 +622,7 @@ public class SheetViewController: UIViewController {
                 self.view.layoutIfNeeded()
             }, completion: { _ in
                 if previousSize != size {
+                    ///ok
                     self.sizeChanged?(self, size, newHeight)
                 }
                 self.contentViewController.updateAfterLayout()
@@ -719,7 +721,11 @@ public class SheetViewController: UIViewController {
             },
             completion: { _ in
                 if let sc = self.childScrollView{
-                    sc.setContentOffset(CGPoint(x: 0, y: -self.options.pullBarHeight), animated: true)                }
+                    print("sizechng-----:\(sc.contentOffset)")
+                    if(sc.contentOffset.y <= 0) {
+                    sc.setContentOffset(CGPoint(x: 0, y: -self.options.pullBarHeight), animated: true)
+                    }
+                }
                 if removeFromParent {
                 self.view.removeFromSuperview()
                 self.removeFromParent()
@@ -773,7 +779,7 @@ extension SheetViewController: UIGestureRecognizerDelegate {
         }
         let topInset = childScrollView.contentInset.top
         
-        guard abs(velocity.y) > abs(velocity.x), childScrollView.contentOffset.y <= -topInset else { return false }
+        guard /*abs(velocity.y) > abs(velocity.x), */childScrollView.contentOffset.y <= -topInset else { return false }
         
         if velocity.y < 0 {
             let containerHeight = height(for: self.currentSize)
