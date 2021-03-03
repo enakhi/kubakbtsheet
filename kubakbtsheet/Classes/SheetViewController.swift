@@ -585,10 +585,10 @@ public class SheetViewController: UIViewController {
         if finalh >= fullscreenHeight*0.8 {
             let a = fullscreenHeight-finalh
             let b = fullscreenHeight*0.2
-            self.cornerRadius=(a/b)*12
+            self.cornerRadius=(a/b)*options._cornerRadius
         }
         else{
-        self.cornerRadius=12
+        self.cornerRadius=options._cornerRadius
         }
     }
     
