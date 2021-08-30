@@ -166,6 +166,12 @@ public class SheetViewController: UIViewController {
     public var sizeChanged: ((SheetViewController, SheetSize, CGFloat) -> Void)?
     
     public private(set) var contentViewController: SheetContentViewController
+    
+    public let alertView:UIView = {
+       let a=UIView()
+        return a
+    }()
+    public var alertViewHeight:CGFloat=64
     var overlayView = UIView()
     var blurView = UIVisualEffectView()
     var overlayTapView = UIView()
@@ -187,7 +193,12 @@ public class SheetViewController: UIViewController {
         get { self.contentViewController.contentBackgroundColor }
         set { self.contentViewController.contentBackgroundColor = newValue }
     }
-    
+    public func getAlertViewHeight() ->CGFloat{
+        if(alertView.isHidden){
+            return 0
+        }
+        return alertViewHeight
+    }
     public init(controller: UIViewController, sizes: [SheetSize] = [.intrinsic], options: SheetOptions? = nil) {
         let options = options ?? SheetOptions.default
         self.contentViewController = SheetContentViewController(childViewController: controller, options: options)
@@ -343,11 +354,25 @@ public class SheetViewController: UIViewController {
         self.attemptDismiss(animated: true)
     }
     private func addContentView() {
+        self.view.addSubview(alertView)
+        
+        
+        
         self.contentViewController.willMove(toParent: self)
         self.addChild(self.contentViewController)
         self.view.addSubview(self.contentViewController.view)
         self.contentViewController.didMove(toParent: self)
         self.contentViewController.delegate = self
+        
+        
+        alertView.translatesAutoresizingMaskIntoConstraints=false
+        NSLayoutConstraint.activate([
+            alertView.bottomAnchor.constraint(equalTo: self.contentViewController.view.topAnchor),
+            alertView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            alertView.widthAnchor.constraint(equalTo: self.contentViewController.view.widthAnchor),
+            alertView.topAnchor.constraint(equalTo: self.view.topAnchor)
+        ])
+        
         Constraints(for: self.contentViewController.view) {
             $0.left.pinToSuperview().priority = UILayoutPriority(999)
             $0.left.pinToSuperview(inset: 0, relation: .greaterThanOrEqual)
@@ -364,6 +389,7 @@ public class SheetViewController: UIViewController {
             $0.bottom.pinToSuperview()
             $0.top.pinToSuperview(inset: top, relation: .greaterThanOrEqual).priority = UILayoutPriority(999)
         }
+        
     }
     
     private func addPanGestureRecognizer() {
@@ -558,6 +584,7 @@ public class SheetViewController: UIViewController {
             case .fixed(let height):
                 contentHeight = height + self.keyboardHeight
             case .fullscreen:
+                
                 contentHeight = fullscreenHeight
             case .intrinsic:
                 contentHeight = self.contentViewController.preferredHeight + self.keyboardHeight
@@ -571,7 +598,13 @@ public class SheetViewController: UIViewController {
         if !justgetInfo{
         self.corectCorners(finalh)
         }
-        return finalh
+        if finalh<fullscreenHeight {
+        return finalh - getAlertViewHeight()
+        }
+        else
+        {
+            return finalh 
+        }
     }
     private func corectCorners(_ finalh:CGFloat){
         let fullscreenHeight: CGFloat
@@ -679,6 +712,8 @@ public class SheetViewController: UIViewController {
         let contentView = self.contentViewController.contentView
         contentView.transform = CGAffineTransform(translationX: 0, y: contentView.bounds.height)
         self.overlayView.alpha = 0
+        self.alertView.alpha=0
+//        self.alertView.isHidden=false
         self.updateOrderedSizes()
         self.view.layer.opacity=1
         self.view.isUserInteractionEnabled=true
@@ -689,7 +724,9 @@ public class SheetViewController: UIViewController {
             withDuration: duration,
             animations: {
                 contentView.transform = .identity
+                self.alertView.transform = .identity
                 self.overlayView.alpha = 1
+                self.alertView.alpha=1
             },
             completion: { _ in
                 let newHeight = self.height(for: self.currentSize)
@@ -717,7 +754,9 @@ public class SheetViewController: UIViewController {
             withDuration: duration,
             animations: {
                 contentView.transform = CGAffineTransform(translationX: 0, y: contentView.bounds.height)
+                self.alertView.transform = CGAffineTransform(translationX: 0, y: contentView.bounds.height)
                 self.overlayView.alpha = 0
+                self.alertView.alpha = 0
             },
             completion: { _ in
                 if let sc = self.childScrollView{
@@ -733,6 +772,7 @@ public class SheetViewController: UIViewController {
                 if hide {
                     self.view.layer.opacity=0
                     self.view.isUserInteractionEnabled=false
+                    
                 }
                 let newHeight = self.height(for: self.currentSize)
                 self.sizeChanged?(self, self.currentSize, newHeight)
@@ -744,6 +784,14 @@ public class SheetViewController: UIViewController {
 
 extension SheetViewController: SheetViewDelegate {
     func sheetPoint(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        if(alertView.subviews.count>0){
+            for view in alertView.subviews {
+                let isalert = view.frame.contains(point)
+                if view.isUserInteractionEnabled&&isalert {
+                    return true
+                }
+            }
+        }
         let isInOverlay = self.overlayTapView.bounds.contains(point)
         if self.allowGestureThroughOverlay, isInOverlay {
             return false
