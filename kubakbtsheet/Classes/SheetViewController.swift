@@ -571,7 +571,7 @@ public class SheetViewController: UIViewController {
         })
     }
     
-    private func height(for size: SheetSize?,justgetInfo:Bool=false) -> CGFloat {
+    public func height(for size: SheetSize?,justgetInfo:Bool=false,dontcumputeAlertHeight:Bool=false) -> CGFloat {
         guard let size = size else { return 0 }
         let contentHeight: CGFloat
         let fullscreenHeight: CGFloat
@@ -599,7 +599,12 @@ public class SheetViewController: UIViewController {
         self.corectCorners(finalh)
         }
         if finalh<fullscreenHeight {
-        return finalh - getAlertViewHeight()
+            if dontcumputeAlertHeight{
+                return finalh
+            }
+            else{
+                return finalh - getAlertViewHeight()
+            }
         }
         else
         {

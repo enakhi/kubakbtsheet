@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'kubakbtsheet'
-  s.version          = '1.2.7'
+  s.version          = '1.2.8'
   s.summary          = 'kubakbtsheet is for bottom sheet'
 
 # This description is used to generate tags and improve search results.
@@ -35,7 +35,7 @@ TODO: Add long description of the pod here.
  s.swift_version = "5.0"
 
   s.source_files = 'kubakbtsheet/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'kubakbtsheet' => ['kubakbtsheet/Assets/*.png']
   # }
