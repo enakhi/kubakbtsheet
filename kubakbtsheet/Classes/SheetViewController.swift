@@ -169,6 +169,7 @@ public class SheetViewController: UIViewController {
     
     public let alertView:UIView = {
        let a=UIView()
+        a.isHidden=true
         return a
     }()
     public var alertViewHeight:CGFloat=64
