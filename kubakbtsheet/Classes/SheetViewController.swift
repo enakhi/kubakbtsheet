@@ -571,7 +571,7 @@ public class SheetViewController: UIViewController {
             self.resize(to: self.currentSize)
         })
     }
-    
+    public var usingAsPopUp=false
     public func height(for size: SheetSize?,justgetInfo:Bool=false,dontcumputeAlertHeight:Bool=false) -> CGFloat {
         guard let size = size else { return 0 }
         let contentHeight: CGFloat
@@ -588,9 +588,9 @@ public class SheetViewController: UIViewController {
                 
                 contentHeight = fullscreenHeight
             case .intrinsic:
-                contentHeight = self.contentViewController.preferredHeight + self.keyboardHeight
+                contentHeight = self.contentViewController.preferredHeight +  self.keyboardHeight
             case .percent(let percent):
-                contentHeight = (self.view.bounds.height) * CGFloat(percent) + self.keyboardHeight
+                contentHeight = (self.view.bounds.height) * CGFloat(percent) + (usingAsPopUp ? 0 : self.keyboardHeight)
             case .marginFromTop(let margin):
                 contentHeight = (self.view.bounds.height) - margin + self.keyboardHeight
         }
