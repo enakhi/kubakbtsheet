@@ -57,6 +57,7 @@ public class SheetViewController: UIViewController {
         }
         positionListener+=[listener]
     }
+    public var isUsedForDialog=false
     /// Dismisses the sheet by tapping on the background overlay
     public var dismissOnOverlayTap: Bool = true {
        didSet {
